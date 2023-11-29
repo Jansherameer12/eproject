@@ -149,3 +149,6 @@ nav ul li a:hover::before {
     text-align: center;
     z-index: 100px;
 }
+.hover-target{
+    z-index: 99;
+}
