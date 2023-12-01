@@ -10,7 +10,7 @@
 .hero {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    background: linear-gradient(rgba(12, 3, 51, 0.048), rgba(12, 3, 51, 0.3));
     position: relative;
     padding: 0 5%;
     display: flex;
@@ -124,7 +124,7 @@ nav ul li a:hover::before {
     }
 }
 
-.parks{
+.parks {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -134,21 +134,215 @@ nav ul li a:hover::before {
     background-repeat: no-repeat;
     padding: 30px 50px;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.578);
     /* z-index: 1; */
 }
-.title{
+
+.title {
     font-size: 40px;
-    color: white;
+    /* color: white; */
     text-align: center;
     z-index: 100px;
 }
-.hover-target{
+
+.hover-target {
     z-index: 99;
+}
+
+.national-parks {
+    /* max-width: 1024px; */
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.nparks {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.park {
+    width: 30%;
+    overflow: hidden;
+    /* background: #000; */
+    border-radius: 10px;
+}
+
+.park img {
+    width: 100%;
+    height: 100%;
+}
+
+.overflow {
+    overflow: hidden;
+    height: 310px;
+}
+
+.overflow img:hover {
+    /* transform: scale(1.1); */
+
+}
+.btns{
+    text-align: center;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    margin: 30px 20px;
+}
+
+.btn-7 {
+    background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-7:before,
+.btn-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-7:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-7:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-7:hover {
+    color: rgba(251, 75, 2, 1);
+    background: transparent;
+}
+
+.btn-7:hover:before {
+    height: 100%;
+}
+
+.btn-7:hover:after {
+    width: 100%;
+}
+
+.btn-7 span:before,
+.btn-7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-7 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-7 span:after {
+    height: 2px;
+    width: 0%;
+}
+
+.btn-7 span:hover:before {
+    height: 100%;
+}
+
+.btn-7 span:hover:after {
+    width: 100%;
+}
+
+
+/* 14 */
+.btn-14 {
+    background: rgb(255, 151, 0);
+    border: none;
+    z-index: 1;
+}
+
+.btn-14:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #eaf818;
+    background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5);
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+.btn-14:hover {
+    color: #000;
+}
+
+.btn-14:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+.btn-14:active {
+    top: 2px;
 }
