@@ -410,16 +410,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-.card a {
-    background: var(--btn, #000);
-    color: #fff;
-    padding: 10px 15px;
-    width: 100%;
-    display: block;
-    border-radius: var(--br);
-    text-decoration: none;
-    margin-top: 15px;
-}
 
 @media (max-width: 767px) {
     .row {
@@ -514,3 +504,28 @@ footer p{
 #Nationaparks{
     transition: 0.3s all;
 }
+
+.ptitle{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+.swiper {
+    width: 100%;
+    height: 500px;
+}
+  .test h1{
+    z-index: 99;
+    /* text-align: center; */
+  }
+  .reviews{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .reviews p{
+    padding: 10px 50px;
+    text-align: center;
+  }
