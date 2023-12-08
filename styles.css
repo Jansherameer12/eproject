@@ -388,7 +388,7 @@ nav ul li a:hover::before {
 
 .row {
     display: flex;
-    gap: 90px;
+   justify-content: space-between;
     justify-content: center;
 }
 
@@ -674,20 +674,17 @@ footer p{
     .park{
         width: 95%;
     }
-    .card {
-        flex: 0 0 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
 
+    .row {
+        flex-direction: column;
+    }
+    
+    
   }
 
 @media only screen and (min-width: 600px) {
 
-    .row {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px;
-    }
+   
 
    
 }
