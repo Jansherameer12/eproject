@@ -8,7 +8,7 @@ function Onclick() {
 
 
 const scroll = new LocomotiveScroll({
-  el: document.querySelector('#main'),
+  el: document.querySelector('#blur'),
   smooth: true
 });
 
