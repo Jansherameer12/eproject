@@ -65,14 +65,152 @@ function cart() {
     text: `Your id is ${number + Date.now().toString()}`,
     icon: "success"
   });
+  
 }
 
 
 
-function book() {
+function boo() {
   var cart = document.getElementById('cart');
   cart.style.right = '0';
   // window.addEventListener('click', function () {
   //   cart.style.right = '-1000px';
   // }); // Closing parenthesis was added here
 }
+
+// function popshow(){
+//   var pop= document.getElementById('pop');
+//   pop.style.display="block";
+//   document.getElementById('blur').style.filter="5px";
+//   document.body.style.overflow="hidden"
+// }
+
+function park1() {
+  Swal.fire({
+    title: "Yellowstone",
+    text: `Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot.
+    Mostly in Wyoming, the park spreads into parts of Montana and Idaho too. Yellowstone features dramatic
+    canyons, alpine rivers, lush forests, hot springs and gushing geysers, including its most famous,
+    Old Faithful. It's also home to hundreds of animal species, including bears, wolves, bison, elk and
+    antelope.`,
+    imageUrl: "images/Kruger National Park.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "Custom image",
+    
+  });
+}
+function park2() {
+  Swal.fire({
+    title: "Yellowstone",
+    text: `Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot.
+    Mostly in Wyoming, the park spreads into parts of Montana and Idaho too. Yellowstone features dramatic
+    canyons, alpine rivers, lush forests, hot springs and gushing geysers, including its most famous,
+    Old Faithful. It's also home to hundreds of animal species, including bears, wolves, bison, elk and
+    antelope.`,
+    imageUrl: "images/Kruger National Park.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "Custom image",
+    
+  });
+}
+function park3() {
+  Swal.fire({
+    title: "Yellowstone",
+    text: `Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot.
+    Mostly in Wyoming, the park spreads into parts of Montana and Idaho too. Yellowstone features dramatic
+    canyons, alpine rivers, lush forests, hot springs and gushing geysers, including its most famous,
+    Old Faithful. It's also home to hundreds of animal species, including bears, wolves, bison, elk and
+    antelope.`,
+    imageUrl: "images/Kruger National Park.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "Custom image",
+    
+  });
+}
+function park4() {
+  Swal.fire({
+    title: "Yellowstone",
+    text: `Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot.
+    Mostly in Wyoming, the park spreads into parts of Montana and Idaho too. Yellowstone features dramatic
+    canyons, alpine rivers, lush forests, hot springs and gushing geysers, including its most famous,
+    Old Faithful. It's also home to hundreds of animal species, including bears, wolves, bison, elk and
+    antelope.`,
+    imageUrl: "images/Kruger National Park.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "Custom image",
+    
+  });
+}
+function park5() {
+  Swal.fire({
+    title: "Yellowstone",
+    text: `Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot.
+    Mostly in Wyoming, the park spreads into parts of Montana and Idaho too. Yellowstone features dramatic
+    canyons, alpine rivers, lush forests, hot springs and gushing geysers, including its most famous,
+    Old Faithful. It's also home to hundreds of animal species, including bears, wolves, bison, elk and
+    antelope.`,
+    imageUrl: "images/Kruger National Park.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "Custom image",
+    
+  });
+}
+function park6() {
+  Swal.fire({
+    title: "Yellowstone",
+    text: `Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot.
+    Mostly in Wyoming, the park spreads into parts of Montana and Idaho too. Yellowstone features dramatic
+    canyons, alpine rivers, lush forests, hot springs and gushing geysers, including its most famous,
+    Old Faithful. It's also home to hundreds of animal species, including bears, wolves, bison, elk and
+    antelope.`,
+    imageUrl: "images/Kruger National Park.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "Custom image",
+    
+  });
+}
+function park7() {
+  Swal.fire({
+    title: "Yellowstone",
+    text: `Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot.
+    Mostly in Wyoming, the park spreads into parts of Montana and Idaho too. Yellowstone features dramatic
+    canyons, alpine rivers, lush forests, hot springs and gushing geysers, including its most famous,
+    Old Faithful. It's also home to hundreds of animal species, including bears, wolves, bison, elk and
+    antelope.`,
+    imageUrl: "images/Kruger National Park.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "Custom image",
+    
+  });
+}
+function park8() {
+  Swal.fire({
+    title: "Yellowstone",
+    text: `Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot.
+    Mostly in Wyoming, the park spreads into parts of Montana and Idaho too. Yellowstone features dramatic
+    canyons, alpine rivers, lush forests, hot springs and gushing geysers, including its most famous,
+    Old Faithful. It's also home to hundreds of animal species, including bears, wolves, bison, elk and
+    antelope.`,
+    imageUrl: "images/Kruger National Park.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "Custom image",
+    
+  });
+}
+

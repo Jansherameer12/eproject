@@ -5,6 +5,9 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* overflow: hidden;
+    user-select: none; */
+    
 }
 
 .hero {
@@ -144,6 +147,13 @@ nav ul li a:hover::before {
     text-align: center;
     z-index: 100px;
 }
+::selection{
+    background-color: transparent;
+    color: rgb(255, 151, 0);
+}
+.title{
+    color: rgb(255, 151, 0);
+}
 
 .hover-target {
     z-index: 99;
@@ -152,10 +162,11 @@ nav ul li a:hover::before {
 .national-parks {
     /* max-width: 1024px; */
     /* background: linear-gradient(to right, rgb(153, 27, 27), rgb(202, 138, 4), rgb(234, 179, 8)); */
-    background-color: #330033;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    /* background-color: #330033; */
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"); */
     margin: 0 auto;
     padding: 30px 20px;
+    position: relative;
 }
 
 .nparks {
@@ -163,14 +174,26 @@ nav ul li a:hover::before {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 10px;
 }
-
+.nparks img{
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    opacity: 0.8;
+    transition: 0.3s ease-in-out; 
+    cursor: pointer;
+}
+.nparks img:hover{
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
 .title {
     font-size: 35px;
     text-align: center;
     font-weight: 600;
     padding: 20px 0;
-    color: white;
+    color: rgb(255, 151, 0);
     position: relative;
 }
 
@@ -498,12 +521,15 @@ footer p{
   }
 
 .cart{
-    width: 500px;
-    height: 90vh;
-    background-color: #f8e518;
+    display: none;
+    width: 400px;
+    height: 80vh;
+    background-color: #1B1B1F;
+    color: #9ca3af;
+    backdrop-filter: blur(5px);;
     position: absolute;
     top: 0%;
-    right: -1000px;
+    left: 0;
     border-radius: 10px;
 }
 .cart h1{
@@ -533,11 +559,73 @@ footer p{
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+.pop {
+    width: 400px;
+    /* height: 550px; */
+    padding: 5px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1B1B1F;
+    border-radius: 20px;
+    color: #9ca3af;
+    z-index: 900;
+    text-align: center;
+    display: none;
+    
+}
+
+.pop img{
+    padding-top: 10px;
+    width: 95%;
+    height: 200px;
+    border-radius: 15px;
+}
+.pop h1{
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+.pop .btn{
+    margin: 40px 0;
+}
+.pop a{
+    padding: 10px 15px;
+    background-color: rgb(213, 65, 65);
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.pop a:hover{
+    background-color: rgb(151, 32, 32);
+}
+#blur{
+    filter: blur(0px);
+    
+}
+.pop-containecart-container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   /* Responsive codes */
   @media only screen and (max-width: 600px) {
     
     .nparks {
         flex-direction: column;
+    }
+    .nparks img{
+        width: 90%;
+        margin-top: 10px;
     }
 
     .card {
