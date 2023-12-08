@@ -8,12 +8,11 @@
   <title>National Parks</title>
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -35,12 +34,12 @@
       </nav>
       <div class="content">
         <h1>Plan a Visit?</h1>
-        <a onclick="Onclick()" href="#">Explore Parks</a>
+        <a  href="#Nationaparks">Explore Parks</a>
       </div>
 
     </div>
     <div class="national-parks" id="Nationaparks">
-      <h2 class="title" >National Parks</h2>
+      <h2 class="title">National Parks</h2>
       <div class="nparks">
         <img onclick="park1()" src="images/park1pop.png" alt="">
         <img onclick="park2()" src="images/park2.jpg " alt="">
@@ -53,131 +52,117 @@
         <img onclick="park7()" src="images/park7.avif" alt="">
         <img onclick="park8()" src="images/park8.jpg" alt="">
       </div>
-        <!-- <div class="park">
-          <div class="overflow"> <img class="img" src="images/Yellowstone.jpg" alt=""></div>
-          <h1 class="ptitle">Yellowstone</h1>
-          <p>Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot.
-            Mostly in Wyoming, the park spreads into parts of Montana and Idaho too. Yellowstone features dramatic
-            canyons, alpine rivers, lush forests, hot springs and gushing geysers, including its most famous,
-            Old Faithful. It's also home to hundreds of animal species, including bears, wolves, bison, elk and
-            antelope.</p>
-          <div class="btns"><a class="custom-btn btn-7" href="#">Visit</a>
-            <a onclick="book()" class="custom-btn btn-14" >1Book Now</a>
-          </div>
-        </div>
-        <div class="park">
-          <div class="overflow"> <img class="img" src="images/Kruger National Park.jpg" alt=""></div>
-          <h1 class="ptitle">Kruger</h1>
-          <p>Kruger National Park, in northeastern South Africa, is one of Africa’s largest game reserves. Its high
-            density of wild animals includes the Big 5: lions, leopards, rhinos, elephants and buffalos. Hundreds of
-            other mammals make their home here, as do diverse bird species such as vultures, eagles and storks.
-            Mountains, bush plains and tropical forests are all part of the landscape.</p>
-          <div class="btns"><a class="custom-btn btn-7" href="#">Visit</a>
-            <a class="custom-btn btn-14" href="#">Book Now</a>
-          </div>
-        </div>
-        <div class="park">
-          <div class="overflow"> <img class="img" src="images/Torres.jpg" alt=""></div>
-          <h1 class="ptitle">Torres del Paine </h1>
-          <p>Torres del Paine National Park, in Chile’s Patagonia region, is known for its soaring mountains, bright
-            blue icebergs that cleave from glaciers and golden pampas (grasslands) that shelter rare wildlife such as
-            llama-like guanacos. Some of its most iconic sites are the 3 granite towers from which the park takes its
-            name and the horn-shaped peaks called Cuernos del Paine</p>
-          <div class="btns"><a class="custom-btn btn-7" href="#">Visit</a>
-            <a class="custom-btn btn-14" href="#">Book Now</a>
-          </div>
-        </div>
-        <div class="park">
-          <div class="overflow"> <img class="img" src="images/Fiordland National Park.webp" alt=""></div>
-          <h1 class="ptitle">Fiordland</h1>
-          <p>Fiordland National Park is in the southwest of New Zealand’s South Island. It’s known for the
-            glacier-carved fiords of Doubtful and Milford sounds. A beech forest trail on the sandy Milford shore offers
-            views of towering Mitre Peak. Nearby, the craggy Earl Mountains are reflected in the glassy surface of
-            Mirror Lakes. On the Cleddau River, the Chasm Walk passes over bridges with views of powerful waterfalls.
-          </p>
-          <div class="btns"><a class="custom-btn btn-7" href="#">Visit</a>
-            <a class="custom-btn btn-14" href="#">Book Now</a>
-          </div>
-        </div>
-        <div class="park">
-          <div class="overflow"> <img class="img" src="images/yaso.jpg" alt=""></div>
-          <h1 class="ptitle">Yosemite </h1>
-          <p>Yosemite National Park is in California’s Sierra Nevada mountains. It’s famed for its giant, ancient
-            sequoia trees, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of
-            El Capitan and Half Dome. In Yosemite Village are shops, restaurants, lodging, the Yosemite Museum and the
-            Ansel Adams Gallery, with prints of the photographer’s renowned black-and-white landscapes of the area.</p>
-          <div class="btns"><a class="custom-btn btn-7" href="#">Visit</a>
-            <a class="custom-btn btn-14" href="#">Book Now</a>
-          </div>
-        </div>
-        <div class="park">
-          <div class="overflow"> <img class="img" src="images/Jasper National Park Of Canada.jpg" alt=""></div>
-          <h1 class="ptitle">Jasper </h1>
-          <p>Jasper National Park in the Canadian Rockies comprises a vast wilderness area of Alberta province defined
-            by glaciers, lakes and peaks like 11,033-ft.-high Mt. Edith Cavell. The Icefields Parkway, a road from the
-            town of Jasper, passes subalpine forest and the immense Columbia Icefield. Outdoor activities like hiking,
-            camping and skiing are popular. Native wildlife includes elk, moose, bighorn sheep and bears.</p>
-          <div class="btns"><a class="custom-btn btn-7" href="#">Visit</a>
-            <a class="custom-btn btn-14" href="#">Book Now</a>
-          </div>
-        </div> -->
 
-      <!-- </div> -->
 
-    
+
     </div>
     <!-- Reviews -->
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-<div class="reviews">
-  
-  <p>"Yellowstone is a true gem of nature! The geysers and wildlife are breathtaking. I had the chance to witness Old Faithful erupt, and it was a mesmerizing experience. The park rangers were informative and friendly"</p>
-  <h1>Jansher Ameer</h1>
-</div>
-      
+    <h1 id="reviews" class="title">Reviews</h1>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="reviews">
+
+            <p>"Yellowstone is a true gem of nature! The geysers and wildlife are breathtaking. I had the chance to
+              witness Old Faithful erupt, and it was a mesmerizing experience. The park rangers were informative and
+              friendly"</p>
+            <h1>Jansher Ameer</h1>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews">
+
+            <p>"The Grand Canyon left me speechless. Pictures can't capture the grandeur of this natural wonder. ."</p>
+            <h1>Sarah Johnson, Nature Enthusiast</h1>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews">
+
+            <p>"Acadia is a photographer's dream! The sunrise from Cadillac Mountain is worth waking up early for. The
+              diverse landscapes provide endless photo opportunities!"</p>
+            <h1>Emily Carter, Photographer</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <div class="swiper-slide"><div class="reviews">
-      
-      <p>"The Grand Canyon left me speechless. Pictures can't capture the grandeur of this natural wonder. ."</p>
-      <h1>Sarah Johnson, Nature Enthusiast</h1>
-    </div></div>
-    <div class="swiper-slide"><div class="reviews">
-     
-      <p>"Acadia is a photographer's dream! The sunrise from Cadillac Mountain is worth waking up early for. The diverse landscapes provide endless photo opportunities!"</p>
-      <h1>Emily Carter, Photographer</h1>
-    </div></div>
-  </div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
     <!-- Reviews -->
-    <div class="container" id="team">
-      <h1 class="title">Our Team</h1>
-      <div class="row">
-        <div class="card" style="--bc: #8E9792;--btn: #8E9792;">
-          <img src="https://i.ibb.co/dK3Z1LC/1-XMKyvw-IXm-I7.jpg" alt="*">
-          <h2>Jansher </h2>
-          <p class="role">Creative Leader</p>
-          <p>Jansherameer@mail.com</p>
-          <a class="custom-btn btn-14" href="tel:+880123456789">Website</a>
+    <!-- Team starts -->
+    <div id="team" class="team-container">
+      <h1 class="title">Our Teams</h1>
+      <div class="teams">
+        <div class="team">
+          <div class="imgdiv"><img src="images/park1po.png" alt=""></div>
+          <h1>Jansher Ameer</h1>
+          <p>Web Developer</p>
+          <div class="social-menu">
+            <div class="middle">
+              <a class="btn" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="btn" href="#">
+                <i class="fab fa-wordpress"></i>
+              </a>
+              <a class="btn" href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a class="btn" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+            </div>
+          </div>
         </div>
-        <div class="card" style="--bc: #C89F9C;--btn: #C89F9C;">
-          <img src="https://i.ibb.co/zb85xJn/2144735x-Tx-FT0v-G.jpg" alt="*">
-          <h2>Azzan</h2>
-          <p class="role">Sales Manager</p>
-          <p>Azzan@mail.com</p>
-          <a class="custom-btn btn-14" href="tel:+880123456789">Website</a>
+        <div class="team">
+          <div class="imgdiv"><img src="images/park1po.png" alt=""></div>
+          <h1>Jansher Ameer</h1>
+          <p>Web Developer</p>
+          <div class="social-menu">
+            <div class="middle">
+              <a class="btn" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="btn" href="#">
+                <i class="fab fa-wordpress"></i>
+              </a>
+              <a class="btn" href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a class="btn" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+            </div>
+          </div>
         </div>
-        <div class="card" style="--bc: #15307D;--btn: #15307D;">
-          <img src="https://i.ibb.co/cb9FPPw/2144934-Gz-Znk-I7-L.jpg" alt="*">
-          <h2>Yasir</h2>
-          <p class="role">Web Developer</p>
-          <p>Yasir@mail.com</p>
-          <a class="custom-btn btn-14" href="tel:+880123456789">Website</a>
+        <div class="team">
+          <div class="imgdiv"><img src="images/park1po.png" alt=""></div>
+          <h1>Jansher Ameer</h1>
+          <p>Web Developer</p>
+          <div class="social-menu">
+            <div class="middle">
+              <a class="btn" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="btn" href="#">
+                <i class="fab fa-wordpress"></i>
+              </a>
+              <a class="btn" href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a class="btn" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- Team ends -->
     <!-- Contact Form -->
     <div class="contact" id="contact">
       <form action="">
@@ -188,20 +173,19 @@
         <div class="form-group"> <label for="name">Message: </label>
           <textarea name="" id="" placeholder="Message"></textarea>
         </div>
-        <button type="submit" > Submit </button>
+        <button type="submit"> Submit </button>
       </form>
     </div>
     <!-- Contact Form -->
     <!-- footer -->
-   <footer>
-    <p>Copyright 2023 National Parks Design by APTECH TEAM</p>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L48,288C96,288,192,288,288,272C384,256,480,224,576,197.3C672,171,768,149,864,154.7C960,160,1056,192,1152,213.3C1248,235,1344,245,1392,250.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-  
-   </footer>
+    <footer>
+      <p>Copyright 2023 National Parks Design by APTECH TEAM</p>
+    </footer>
     <!-- footer -->
-</div>
-    <!-- Book Now -->
-    <div class="cart-container"><div id="cart" class="cart">
+  </div>
+  <!-- Book Now -->
+  <div class="cart-container">
+    <div id="cart" class="cart">
       <h1>Please Fill the form to book your ticket</h1>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, laboriosam.</p>
       <form action="">
@@ -216,27 +200,15 @@
           <option value="Park 1">park 2</option>
           <option value="Park 6">park 2</option>
         </select>
-        <a onclick="cart()" >Submit</a>
+        <a onclick="cart()">Submit</a>
         <input onclick="cart()" type="button" value="Submit">
       </form>
-    </div></div>
-    <!-- Book Now -->
-      <!-- Parks pop up -->
-<div class="pop-container">
-  <div class="pop" id="pop">
-    <img src="images/Kruger National Park.jpg" alt="">
-    <h1>Kruger</h1>
-    <p>Kruger National Park, in northeastern South Africa, is one of Africa’s largest game reserves. Its high
-      density of wild animals includes the Big 5: lions, leopards, rhinos, elephants and buffalos. Hundreds of
-      other mammals make their home here, as do diverse bird species such as vultures, eagles and storks.
-      Mountains, bush plains and tropical forests are all part of the landscape.</p>
-    <div class="btn"><a onclick="cart()">Book a ticket</a></div>
     </div>
-</div>
-  <!-- Parks pop up -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="script.js"></script>
+  </div>
+  <!-- Book Now -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
