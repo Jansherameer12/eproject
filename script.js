@@ -5,34 +5,16 @@ function Onclick() {
     icon: "success"
   });
 }
-
-
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('#blur'),
-  smooth: true
-});
-
-
-
-
-
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'vertical',
   loop: true,
-
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
@@ -58,6 +40,7 @@ menu.addEventListener('click', function () {
   isMenuOpen = !isMenuOpen;
 });
 
+// Cart
 function cart() {
   var number = Math.floor(Math.random() * 90) + 10;
   Swal.fire({
@@ -67,24 +50,7 @@ function cart() {
   });
 
 }
-
-
-
-function boo() {
-  var cart = document.getElementById('cart');
-  cart.style.right = '0';
-  // window.addEventListener('click', function () {
-  //   cart.style.right = '-1000px';
-  // }); // Closing parenthesis was added here
-}
-
-// function popshow(){
-//   var pop= document.getElementById('pop');
-//   pop.style.display="block";
-//   document.getElementById('blur').style.filter="5px";
-//   document.body.style.overflow="hidden"
-// }
-
+// park display model/popup
 function park1() {
   Swal.fire({
     title: "Yellowstone National Park",
@@ -93,7 +59,7 @@ function park1() {
     imageWidth: 400,
     imageHeight: 200,
     showCloseButton: true,
-    imageAlt: "Custom image",
+    imageAlt: "National Park",
 
   });
 }
@@ -106,7 +72,7 @@ function park2() {
     imageWidth: 400,
     imageHeight: 200,
     showCloseButton: true,
-    imageAlt: "Custom image",
+    imageAlt: "National Park",
 
   });
 }
@@ -119,7 +85,7 @@ function park3() {
     imageWidth: 400,
     imageHeight: 200,
     showCloseButton: true,
-    imageAlt: "Custom image",
+    imageAlt: "National Park",
 
   });
 }
@@ -132,7 +98,7 @@ function park4() {
     imageWidth: 400,
     imageHeight: 200,
     showCloseButton: true,
-    imageAlt: "Custom image",
+    imageAlt: "National Park",
 
   });
 }
@@ -145,7 +111,7 @@ function park5() {
     imageWidth: 400,
     imageHeight: 200,
     showCloseButton: true,
-    imageAlt: "Custom image",
+    imageAlt: "National Park",
 
   });
 }
@@ -158,7 +124,7 @@ function park6() {
     imageWidth: 400,
     imageHeight: 200,
     showCloseButton: true,
-    imageAlt: "Custom image",
+    imageAlt: "National Park",
 
   });
 }
@@ -171,7 +137,7 @@ function park7() {
     imageWidth: 400,
     imageHeight: 200,
     showCloseButton: true,
-    imageAlt: "Custom image",
+    imageAlt: "National Park",
     confirmButtonText: "Ok jan"
 
   });
@@ -185,7 +151,27 @@ function park8() {
     imageWidth: 400,
     imageHeight: 200,
     showCloseButton: true,
-    imageAlt: "Custom image",
+    imageAlt: "National Park",
 
   });
 }
+
+// Typewriter
+var app = document.getElementById('herotext');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(2500)
+  .typeString('Plan a visit?')
+  .pauseFor(600)
+  .deleteChars(16)
+  .typeString('Indulge in flavors')
+  .pauseFor(600)
+  .deleteChars(18)
+  .typeString('Discover history')
+  .pauseFor(1000)
+  .start();

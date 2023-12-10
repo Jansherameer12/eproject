@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <title>National Parks</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div id="blur">     
+      <div class="herosection">
+        <h1>Home>Natonal Park</h1>
+        <nav>
+            <img src="images/logo.png" alt="Logo" class="logo ">
+            <ul id="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="nationalpark.html">National Parks</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="ourteam.html">Our Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <i id="menu" class="fa-solid fa-bars"></i>
+          </nav>
+      </div>
+
+    <div class="national-parks" id="Nationaparks">
+      <h2 class="title">National Parks</h2>
+      <div class="nparks">
+        <img onclick="park1()" src="images/park1pop.png" alt="">
+        <img onclick="park2()" src="images/park2.jpg " alt="">
+        <img onclick="park3()" src="images/park3.jpg" alt="">
+        <img onclick="park4()" src="images/park4.jpg" alt="">
+      </div>
+      <div class="nparks">
+        <img onclick="park5()" src="images/park5.jpg" alt="">
+        <img onclick="park6()" src="images/park6.jpg" alt="">
+        <img onclick="park7()" src="images/park7.avif" alt="">
+        <img onclick="park8()" src="images/park8.jpg" alt="">
+      </div>
+
+
+
+    </div>
+   <!-- Our services -->
+   <div class="services-container">
+    <h2 class="title">Our Services</h2>
+    <div class="services">
+      <div class="service">
+       <div class="service-container"> <i class="fas fa-map-marked-alt"></i>
+        <h4>Tailored Travel Packages</h4></div>
+        <div class="content">
+          <p>Explore our custom travel packages designed to match your preferences, budget, and schedule. Whether you're seeking cultural enrichment, adventure, or relaxation, our tailored packages ensure a personalized and unforgettable experience.</p>
+        </div>
+      </div>
+      <div class="service">
+        
+        <div class="service-container">
+          <i class="fas fa-route"></i>
+        <h4>Expert Guided Tours</h4>
+        </div>
+        <div class="content">
+          <p>Immerse yourself in the destination's culture and history with our knowledgeable guides. From historic landmarks to hidden gems, our guided tours provide insightful and engaging experiences, making your journey more enriching.</p>
+        </div>
+      </div>
+      <div class="service">
+        <div class="service-container"><i class="fas fa-bed"></i>
+          <h4>Accommodation Booking</h4></div>
+        <div class="content">
+          <p>Find the perfect place to stay with our accommodation booking services. We secure the best deals on a variety of options, ensuring that your accommodation is comfortable, convenient, and enhances your overall travel experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our services -->
+   <!-- Reviews -->
+   <h1 id="reviews" class="title">Reviews</h1>
+   <div class="swiper">
+     <div class="swiper-wrapper">
+       <div class="swiper-slide">
+         <div class="reviews">
+
+           <p>"Yellowstone is a true gem of nature! The geysers and wildlife are breathtaking. I had the chance to
+             witness Old Faithful erupt, and it was a mesmerizing experience. The park rangers were informative and
+             friendly"</p>
+           <h1>Jansher Ameer</h1>
+         </div>
+
+       </div>
+       <div class="swiper-slide">
+         <div class="reviews">
+
+           <p>"The Grand Canyon left me speechless. Pictures can't capture the grandeur of this natural wonder. ."</p>
+           <h1>Sarah Johnson, Nature Enthusiast</h1>
+         </div>
+       </div>
+       <div class="swiper-slide">
+         <div class="reviews">
+
+           <p>"Acadia is a photographer's dream! The sunrise from Cadillac Mountain is worth waking up early for. The
+             diverse landscapes provide endless photo opportunities!"</p>
+           <h1>Emily Carter, Photographer</h1>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-button-prev"></div>
+     <div class="swiper-button-next"></div>
+   </div>
+   <!-- Reviews -->
+   <!-- Team starts -->
+   <div id="team" class="team-container">
+    <h1 class="title">Our Teams</h1>
+    <div class="teams">
+      <div class="team">
+        <div class="imgdiv"><img src="images/park1po.png" alt=""></div>
+        <h1>Jansher Ameer</h1>
+        <p>Full stack Web Developer</p>
+        <div class="social-menu">
+          <div class="middle">
+            <a class="btn" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn" href="#">
+              <i class="fab fa-wordpress"></i>
+            </a>
+            <a class="btn" href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a class="btn" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="imgdiv"><img src="images/park1po.png" alt=""></div>
+        <h1>Shah Azzam Qadir</h1>
+        <p>Front-end Web Developer</p>
+        <div class="social-menu">
+          <div class="middle">
+            <a class="btn" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn" href="#">
+              <i class="fab fa-wordpress"></i>
+            </a>
+            <a class="btn" href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a class="btn" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="imgdiv"><img src="images/park1po.png" alt=""></div>
+        <h1>Anas Arif</h1>
+        <p>Front end Web Developer</p>
+        <div class="social-menu">
+          <div class="middle">
+            <a class="btn" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn" href="#">
+              <i class="fab fa-wordpress"></i>
+            </a>
+            <a class="btn" href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a class="btn" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Team ends -->
+    <!-- Contact Form -->
+    <div class="contact" id="contact">
+      <form action="">
+        <div class="form-group"> <label for="name">Name: </label>
+          <input type="text" placeholder="Enter your Name"></div>
+        <div class="form-group"> <label for="Subject">Email: </label>
+          <input type="text" placeholder="Enter your Subject"></div>
+        <div class="form-group"> <label for="name">Message: </label>
+          <textarea name="" id="" placeholder="Message"></textarea>
+        </div>
+        <button type="submit"> Submit </button>
+      </form>
+    </div>
+    <!-- Contact Form -->
+    <!-- footer -->
+    <footer>
+      <p>Copyright 2023 National Parks Design by APTECH TEAM</p>
+    </footer>
+    <!-- footer -->
+  </div>
+  <!-- Book Now -->
+  <div class="cart-container">
+    <div id="cart" class="cart">
+      <h1>Please Fill the form to book your ticket</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, laboriosam.</p>
+      <form action="">
+        <input type="text" placeholder="Enter your Name" required> <br>
+        <input type="email" placeholder="Enter your Email" required> <br>
+        <label for="">Select the park you want to visit</label> <br>
+        <select name="" id="" required>
+          <option value="Park 1">Park</option>
+          <option value="Park 1">park 2</option>
+          <option value="Park 1">park 2</option>
+          <option value="Park 1">park 2</option>
+          <option value="Park 1">park 2</option>
+          <option value="Park 6">park 2</option>
+        </select>
+        <a onclick="cart()">Submit</a>
+        <input onclick="cart()" type="button" value="Submit">
+      </form>
+    </div>
+  </div>
+  <!-- Book Now -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
