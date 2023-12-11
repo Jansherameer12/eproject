@@ -476,6 +476,7 @@ form button:hover {
 
 footer p {
     text-align: center;
+    padding: 10px 0;
 }
 
 #Nationaparks {
@@ -639,6 +640,11 @@ footer p {
     font-weight: 500;
     font-size: 18px;
     display: none;
+}
+.des{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
 }
 
 /* Responsive codes */
