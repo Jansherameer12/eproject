@@ -60,6 +60,7 @@ function park1() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
+    confirmButtonText: "Exit"
 
   });
 }
@@ -73,6 +74,7 @@ function park2() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
+    confirmButtonText: "Exit"
 
   });
 }
@@ -86,6 +88,7 @@ function park3() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
+    confirmButtonText: "Exit"
 
   });
 }
@@ -99,6 +102,7 @@ function park4() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
+    confirmButtonText: "Exit"
 
   });
 }
@@ -112,6 +116,7 @@ function park5() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
+    confirmButtonText: "Exit"
 
   });
 }
@@ -125,6 +130,7 @@ function park6() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
+    confirmButtonText: "Exit"
 
   });
 }
@@ -138,7 +144,7 @@ function park7() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
-    confirmButtonText: "Ok jan"
+    confirmButtonText: "Exit"
 
   });
 }
@@ -152,6 +158,7 @@ function park8() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
+    confirmButtonText: "Exit"
 
   });
 }
@@ -175,3 +182,23 @@ typewriter
   .typeString('Discover history')
   .pauseFor(1000)
   .start();
+
+
+
+
+  function toggleAnswer(event) {
+    const question = event.target.closest('.faqs-question');
+    
+    if (question) {
+      const answer = question.querySelector('.faqs-answer');
+  
+      if (answer) {
+        answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
+      } else {
+        console.error('Answer element not found!');
+      }
+    } else {
+      console.error('Parent faqs-question element not found!');
+    }
+  }
+  
