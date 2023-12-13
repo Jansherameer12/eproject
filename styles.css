@@ -432,7 +432,7 @@ form {
 
 form label {}
 
-form input {
+form iput {
     width: 100%;
     height: 30px;
     outline: none;
@@ -443,7 +443,7 @@ form input {
     margin-bottom: 10px;
 }
 
-form textarea {
+form tetarea {
     width: 100%;
     height: 30px;
     outline: none;
@@ -661,6 +661,15 @@ footer p {
     color: #fff;
     text-decoration: none;
   }
+  .accordion-button {
+    color: #8B8B8D; /* Text color */
+    background-color: #1B1B1F; /* Background color */
+  }
+
+  .accordion-body {
+    color: #8B8B8D; /* Text color */
+    background-color: #1B1B1F; /* Background color */
+  }
 /* Responsive codes */
 @media only screen and (max-width: 600px) {
 
@@ -734,8 +743,9 @@ footer p {
     }
 
     .team {
-        margin-top: 20px;
-
+        width: 100%;
+        height: 310px;  
+        margin-top: 20px;  
     }
     nav .logo{
         width: 150px;
@@ -752,6 +762,10 @@ footer p {
         margin-top: 20px;
     }
 
+    .faqs-container{
+        padding: 10px 20px;
+    }
+    
 
 }
 
