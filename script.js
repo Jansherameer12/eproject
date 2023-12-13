@@ -209,7 +209,7 @@ typewriter
 
   function scrollFunction() {
     var btn = document.querySelector(".btntop");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 200) {
       btn.style.display = "block";
     } else {
       btn.style.display = "none";
@@ -221,4 +221,18 @@ typewriter
     document.documentElement.scrollTop = 0;
   }
 
+  // AOS 
   AOS.init();
+
+  // Contact Onclick function
+
+  function contact() {
+    document.getElementById('name').value="";
+    document.getElementById('email').value="";
+    document.getElementById('message').value="";
+    Swal.fire({
+      title: "Success!",
+      text: "The message sent successfully!",
+      icon: "success"
+    });
+  }
