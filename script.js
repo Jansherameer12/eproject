@@ -60,7 +60,7 @@ function park1() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
-    confirmButtonText: "Exit"
+    showConfirmButton: false
 
   });
 }
@@ -74,7 +74,7 @@ function park2() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
-    confirmButtonText: "Exit"
+    showConfirmButton: false
 
   });
 }
@@ -88,7 +88,7 @@ function park3() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
-    confirmButtonText: "Exit"
+    showConfirmButton: false
 
   });
 }
@@ -102,7 +102,7 @@ function park4() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
-    confirmButtonText: "Exit"
+    showConfirmButton: false
 
   });
 }
@@ -116,7 +116,7 @@ function park5() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
-    confirmButtonText: "Exit"
+    showConfirmButton: false
 
   });
 }
@@ -130,7 +130,7 @@ function park6() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
-    confirmButtonText: "Exit"
+    showConfirmButton: false
 
   });
 }
@@ -144,7 +144,7 @@ function park7() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
-    confirmButtonText: "Exit"
+    showConfirmButton: false
 
   });
 }
@@ -158,7 +158,13 @@ function park8() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "National Park",
-    confirmButtonText: "Exit"
+    showConfirmButton: false,
+    didOpen: () => {
+      const modalContainer = Swal.getPopup();
+      if (modalContainer) {
+        modalContainer.style.zIndex = 2000;
+      }
+    }
 
   });
 }
@@ -186,23 +192,6 @@ typewriter
 
 
 
-  function toggleAnswer(event) {
-    const question = event.target.closest('.faqs-question');
-    
-    if (question) {
-      const answer = question.querySelector('.faqs-answer');
-  
-      if (answer) {
-        answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
-      } else {
-        console.error('Answer element not found!');
-      }
-    } else {
-      console.error('Parent faqs-question element not found!');
-    }
-  }
-  
-
   // TOP BTN
 
   window.onscroll = function() { scrollFunction() };
@@ -213,6 +202,12 @@ typewriter
       btn.style.display = "block";
     } else {
       btn.style.display = "none";
+    }
+    var navbar = document.getElementById("navbar")
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
     }
   }
 

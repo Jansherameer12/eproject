@@ -39,7 +39,7 @@ nav {
 }
 
 nav .logo {
-    width: 280px;
+    width: 220px;
 }
 
 nav ul {
@@ -193,7 +193,7 @@ nav ul li a:hover::before {
 }
 
 .service {
-    width: 300px;
+    width: 30%;
     height: 300px;
     background-color: #0369ac;
     text-align: center;
@@ -202,6 +202,10 @@ nav ul li a:hover::before {
     position: relative;
     transition: 0.3s ease-in-out;
 }
+.custom-swal-container {
+    z-index: 2000;
+  }
+  
 
 .service i {
     font-size: 60px;
@@ -217,7 +221,7 @@ nav ul li a:hover::before {
     position: absolute;
     top: -50%;
     left: 0%;
-    background-color: #ac3e03;
+    background-color: #0369ac;
     padding: 10px 20px;
     transition: 0.3s ease-in-out;
     height: 100%;
@@ -592,6 +596,13 @@ footer {
     color: #9ca3af !important;
 }
 
+.sticky{
+    position: fixed !important;
+    z-index: 1000;
+    background-color: #1B1B1F;
+    color: #ABABAC;
+    padding: 0;
+}
 /* Responsive codes */
 @media only screen and (max-width: 600px) {
 
