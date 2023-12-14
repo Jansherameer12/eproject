@@ -168,27 +168,31 @@ nav ul li a:hover::before {
     z-index: 99;
 }
 
-.herosection{
+.herosection {
     padding: 20px 0;
 }
-.herosection h1{
+
+.herosection h1 {
     text-align: center;
     margin: 150px 0 30px 0;
     font-size: 15px;
     font-weight: 300;
 }
-.services-container{
-    padding: 30px ;
+
+.services-container {
+    padding: 30px;
 }
-.services{
-   
+
+.services {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     /* gap:2%; */
 }
-.service{
+
+.service {
     width: 300px;
     height: 300px;
     background-color: #0369ac;
@@ -198,18 +202,17 @@ nav ul li a:hover::before {
     position: relative;
     transition: 0.3s ease-in-out;
 }
-.service-container{
-   
-}
-.service i{
+
+.service i {
     font-size: 60px;
     padding: 20px 0;
 }
-.service h4{
+
+.service h4 {
     font-size: 17px;
 }
 
-.service .content{
+.service .content {
     width: 100%;
     position: absolute;
     top: -50%;
@@ -221,11 +224,13 @@ nav ul li a:hover::before {
     display: none;
     align-items: center;
 }
-.service:hover .content{
-   display: flex;
-   transition: 0.3s ease-in-out;
+
+.service:hover .content {
+    display: flex;
+    transition: 0.3s ease-in-out;
 
 }
+
 .national-parks {
     margin: 0 auto;
     padding: 30px 20px;
@@ -299,7 +304,7 @@ nav ul li a:hover::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:20px;
+    gap: 20px;
     padding: 0 50px;
 }
 
@@ -331,7 +336,7 @@ nav ul li a:hover::before {
 
 .team h1 {
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     text-transform: uppercase;
 
@@ -339,12 +344,13 @@ nav ul li a:hover::before {
 
 .team p {
     text-align: center;
+    font-size: 14px;
 
 }
 
 
 .contact {
-    padding: 0 70px ;
+    padding: 0 70px;
     color: white;
     display: flex;
     justify-content: center;
@@ -374,8 +380,8 @@ form button:hover {
 }
 
 
-footer{
-   padding: 0 20px;
+footer {
+    padding: 0 20px;
 }
 
 #Nationaparks {
@@ -522,29 +528,35 @@ footer{
     align-items: center;
 }
 
-.faqs-container{
+.faqs-container {
     padding: 20px 70px;
 }
-.faqs-question{
+
+.faqs-question {
     padding: 10px 0;
 }
-.faqs{
+
+.faqs {
     cursor: pointer;
 }
-.question{
+
+.question {
     font-size: 22px;
-    font-weight: 400; 
+    font-weight: 400;
 }
-.faqs-answer{
+
+.faqs-answer {
     font-weight: 500;
     font-size: 18px;
     display: none;
 }
-.des{
+
+.des {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
 }
+
 .btntop {
     display: none;
     position: fixed;
@@ -555,23 +567,30 @@ footer{
     border-radius: 50%;
     cursor: pointer;
     transition: display 0.3s ease-in-out;
-  }
-  .btntop a{
+}
+
+.btntop a {
     color: #fff;
     text-decoration: none;
-  }
-  .accordion-button {
-    color: #8B8B8D; /* Text color */
-    background-color: #1B1B1F; /* Background color */
-  }
+}
 
-  .accordion-body {
-    color: #8B8B8D; /* Text color */
-    background-color: #1B1B1F; /* Background color */
-  }
-  .row ul li a{
-    color: #9ca3af!important;
-  }
+.accordion-button {
+    color: #8B8B8D;
+    /* Text color */
+    background-color: #1B1B1F;
+    /* Background color */
+}
+
+.accordion-body {
+    color: #8B8B8D;
+    /* Text color */
+    background-color: #1B1B1F;
+    /* Background color */
+}
+
+.row ul li a {
+    color: #9ca3af !important;
+}
 
 /* Responsive codes */
 @media only screen and (max-width: 600px) {
@@ -647,28 +666,32 @@ footer{
 
     .team {
         width: 100%;
-        height: 310px;  
-        margin-top: 20px;  
+        height: 310px;
+        margin-top: 20px;
     }
-    nav .logo{
+
+    nav .logo {
         width: 150px;
     }
-    .contact{
+
+    .contact {
         padding: 20px 10px;
         margin-bottom: 10px;
     }
-    .services{
+
+    .services {
         flex-direction: column;
     }
-    .service{
+
+    .service {
         width: 100%;
         margin-top: 20px;
     }
 
-    .faqs-container{
+    .faqs-container {
         padding: 10px 20px;
     }
-    
+
 
 }
 
