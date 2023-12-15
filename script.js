@@ -210,6 +210,7 @@ typewriter
       navbar.classList.remove("sticky");
     }
   }
+  // ScrollToTop
 
   function scrollToTop() {
     document.body.scrollTop = 0;
@@ -231,4 +232,5 @@ typewriter
       icon: "success"
     });
   }
+  
   
