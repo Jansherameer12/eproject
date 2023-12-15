@@ -231,3 +231,4 @@ typewriter
       icon: "success"
     });
   }
+  
