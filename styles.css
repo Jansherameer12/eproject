@@ -630,9 +630,9 @@ footer {
 .blog{
     background-color: #152744;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px 20px;
     width: 33%;
-    height: 100vh;
+    /* height: 100vh; */
     margin-top: 20px;
 }
 .photo{
