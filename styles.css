@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
 
-
-
 * {
     padding: 0%;
     margin: 0%;
@@ -634,6 +632,8 @@ footer {
     border-radius: 10px;
     padding: 20px;
     width: 33%;
+    height: 100vh;
+    margin-top: 20px;
 }
 .photo{
     width: 100%;
@@ -673,7 +673,39 @@ footer {
     padding: 10px 0;
 }
 .blog-title{
-
+    font-size: 15px;
+font-weight: 700;
+}
+.blogspost-title{
+    font-size: 23px;
+    font-weight: 800;
+    /* padding: 5px 20px ; */
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+.blogsnav{
+    height: 10vh;
+}
+.navi{
+    padding: 60px 0 30px 0;
+    
+}
+.navi a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+.blog-post{
+    font-weight: 300;
+}
+.blogs-post{
+    font-weight: 500;
+    width: 100%;
+    padding: 10px 0px;
+}
+.quick-link{
+    font-size: 12px;
 }
 .date a{
     text-decoration: none;
@@ -681,6 +713,12 @@ footer {
     background-color: gray;
     padding: 10px;
     border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
+.date a:hover{
+    background-color: #dadada;
+    color: black;
+    transition: 0.2s ease-in-out;
 }
 .viewall{
     margin: 50px 0;
@@ -693,6 +731,49 @@ footer {
     text-decoration: none;
     color: white;
 }
+.quick-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quick{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footerr{
+    justify-content: space-evenly;
+}
+.nationalparkblog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+.details-blog{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.detail-blog{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 0;
+    gap: 48px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.details-blog .blog-img{
+    width: 100%;
+    height: 90vh;
+   
+   
+}
+
 /* Responsive codes */
 @media only screen and (max-width: 600px) {
 
@@ -832,26 +913,25 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    /* Your styles for extra small devices go here */
-  }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 601px) and (max-width: 768px) {
-    /* Your styles for small devices go here */
-  }
-  
-  /* Medium devices (landscape tablets and small desktops, 768px and up) */
-  @media only screen and (min-width: 769px) and (max-width: 992px) {
-    /* Your styles for medium devices go here */
-  }
-  
-  /* Large devices (laptops and desktops, 992px and up) */
-  @media only screen and (min-width: 993px) and (max-width: 1200px) {
-    /* Your styles for large devices go here */
-  }
-  
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media only screen and (min-width: 1201px) {
-    /* Your styles for extra large devices go here */
-  }
-  
+  /* Your styles for extra small devices go here */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /* Your styles for small devices go here */
+}
+
+/* Medium devices (landscape tablets and small desktops, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* Your styles for medium devices go here */
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* Your styles for large devices go here */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+  /* Your styles for extra large devices go here */
+}
