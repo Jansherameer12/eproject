@@ -168,6 +168,101 @@ function park8() {
 
   });
 }
+function park9() {
+  Swal.fire({
+    title: "Dry Tortugas National Park",
+    text: `Dry Tortugas National Park is in the Gulf of Mexico, west of Key West, Florida. It comprises 7 islands, plus protected coral reefs. Garden Key is home to beaches and the 19th-century Fort Jefferson. Loggerhead Key has a lighthouse and sea turtles. On nearby Loggerhead Reef, the Windjammer Wreck, the remains of an 1875 ship, is a popular dive site. Bush Key is a nesting site for seabirds like sooty terns.`,
+    imageUrl: "images/park9pop.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "National Park",
+    showConfirmButton: false,
+    didOpen: () => {
+      const modalContainer = Swal.getPopup();
+      if (modalContainer) {
+        modalContainer.style.zIndex = 2000;
+      }
+    }
+
+  });
+}
+function park10() {
+  Swal.fire({
+    title: "Biscayne National Park",
+    text: `Biscayne National Park encompasses coral reefs, islands and shoreline mangrove forest in the northern Florida Keys. Its reefs and islands are accessible only by boat. Dolphins, turtles and pelicans live in Biscayne Bay Lagoon. The underwater Maritime Heritage Trail links dive sites, most of them shipwrecks. On Boca Chita Key, Boca Chita Lighthouse has coastal views. A museum at Convoy Point explains local ecosystems.`,
+    imageUrl: "images/park10pop.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "National Park",
+    showConfirmButton: false,
+    didOpen: () => {
+      const modalContainer = Swal.getPopup();
+      if (modalContainer) {
+        modalContainer.style.zIndex = 2000;
+      }
+    }
+
+  });
+}
+function park11() {
+  Swal.fire({
+    title: "Hawaiʻi Volcanoes National Park",
+    text: `Hawaii Volcanoes National Park is on Hawaii Island (the Big Island). At its heart are the Kīlauea and Mauna Loa active volcanoes. The Crater Rim Drive passes steam vents and the Jaggar Museum, which features volcanology exhibits and a viewpoint overlooking Halema'uma'u Crater. Thick ferns mark the entrance to the Thurston Lava Tube (Nāhuku). The Chain of Craters Road weaves over lava. Trails crisscross the park.`,
+    imageUrl: "images/park11pop.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "National Park",
+    showConfirmButton: false,
+    didOpen: () => {
+      const modalContainer = Swal.getPopup();
+      if (modalContainer) {
+        modalContainer.style.zIndex = 2000;
+      }
+    }
+
+  });
+}
+function park12() {
+  Swal.fire({
+    title: "Badlands National Park",
+    text: `Badlands National Park is in South Dakota. Its dramatic landscapes span layered rock formations, steep canyons and towering spires. Bison, bighorn sheep and prairie dogs inhabit its sprawling grasslands. The Badlands Loop Road (Highway 240) winds past scenic lookouts. Several trails begin near the Ben Reifel Visitor Center. The Fossil Exhibit Trail is a boardwalk with displays on fossils uncovered in the park.`,
+    imageUrl: "images/park12pop.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "National Park",
+    showConfirmButton: false,
+    didOpen: () => {
+      const modalContainer = Swal.getPopup();
+      if (modalContainer) {
+        modalContainer.style.zIndex = 2000;
+      }
+    }
+
+  });
+}
+function park13() {
+  Swal.fire({
+    title: "Acadia National Park",
+    text: `Acadia National Park is a 47,000-acre Atlantic coast recreation area primarily on Maine's Mount Desert Island. Its landscape is marked by woodland, rocky beaches and glacier-scoured granite peaks such as Cadillac Mountain, the highest point on the United States’ East Coast. Among the wildlife are moose, bear, whales and seabirds. The bayside town of Bar Harbor, with restaurants and shops, is a popular gateway.`,
+    imageUrl: "images/park13pop.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "National Park",
+    showConfirmButton: false,
+    didOpen: () => {
+      const modalContainer = Swal.getPopup();
+      if (modalContainer) {
+        modalContainer.style.zIndex = 2000;
+      }
+    }
+
+  });
+}
 
 // Typewriter
 var app = document.getElementById('herotext');
