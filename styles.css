@@ -892,15 +892,6 @@ font-weight: 700;
 
 }
 
-@media only screen and (min-width: 600px) {}
-
-
-
-@media only screen and (min-width: 768px) {}
-
-@media only screen and (min-width: 992px) {}
-
-@media only screen and (min-width: 1200px) {}
 
 @media(min-aspect-ratio:16/9) {
     .bg {
@@ -914,29 +905,4 @@ font-weight: 700;
         width: auto;
         height: 100vh;
     }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  /* Your styles for extra small devices go here */
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  /* Your styles for small devices go here */
-}
-
-/* Medium devices (landscape tablets and small desktops, 768px and up) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  /* Your styles for medium devices go here */
-}
-
-/* Large devices (laptops and desktops, 992px and up) */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  /* Your styles for large devices go here */
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1201px) {
-  /* Your styles for extra large devices go here */
 }
